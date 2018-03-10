@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.5</Version>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <Version>1.0.6</Version>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
     <Authors>Osman Buran</Authors>
     <Company />
     <PackageProjectUrl>https://github.com/oburan/Buran.Core.MvcLibrary</PackageProjectUrl>
@@ -24,9 +24,9 @@
 
   <ItemGroup>
     <Compile Update="Resource\Text.Designer.cs">
-      <DependentUpon>Text.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+      <DependentUpon>Text.resx</DependentUpon>
     </Compile>
     <Compile Update="Resource\UI.Designer.cs">
       <DependentUpon>UI.resx</DependentUpon>
@@ -37,12 +37,18 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Resource\Text.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Text.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource\Text.tr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resource\UI.resx">
       <LastGenOutput>UI.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\UI.tr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
 

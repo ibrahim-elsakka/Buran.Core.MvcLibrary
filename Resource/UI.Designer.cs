@@ -61,115 +61,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ağustos.
-        /// </summary>
-        public static string Ay_Agustos {
-            get {
-                return ResourceManager.GetString("Ay_Agustos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Aralık.
-        /// </summary>
-        public static string Ay_Aralik {
-            get {
-                return ResourceManager.GetString("Ay_Aralik", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ekim.
-        /// </summary>
-        public static string Ay_Ekim {
-            get {
-                return ResourceManager.GetString("Ay_Ekim", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Eylül.
-        /// </summary>
-        public static string Ay_Eylul {
-            get {
-                return ResourceManager.GetString("Ay_Eylul", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Haziran.
-        /// </summary>
-        public static string Ay_Haziran {
-            get {
-                return ResourceManager.GetString("Ay_Haziran", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Kasım.
-        /// </summary>
-        public static string Ay_Kasim {
-            get {
-                return ResourceManager.GetString("Ay_Kasim", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mart.
-        /// </summary>
-        public static string Ay_Mart {
-            get {
-                return ResourceManager.GetString("Ay_Mart", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mayıs.
-        /// </summary>
-        public static string Ay_Mayis {
-            get {
-                return ResourceManager.GetString("Ay_Mayis", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Nisan.
-        /// </summary>
-        public static string Ay_Nisan {
-            get {
-                return ResourceManager.GetString("Ay_Nisan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ocak.
-        /// </summary>
-        public static string Ay_Ocak {
-            get {
-                return ResourceManager.GetString("Ay_Ocak", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Şubat.
-        /// </summary>
-        public static string Ay_Subat {
-            get {
-                return ResourceManager.GetString("Ay_Subat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Temmuz.
-        /// </summary>
-        public static string Ay_Temmuz {
-            get {
-                return ResourceManager.GetString("Ay_Temmuz", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Geri.
+        ///   Looks up a localized string similar to Back.
         /// </summary>
         public static string Back {
             get {
@@ -178,7 +70,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Şifre Değiştir.
+        ///   Looks up a localized string similar to Change Password.
         /// </summary>
         public static string ChangePass {
             get {
@@ -187,7 +79,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kapat.
+        ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string Close {
             get {
@@ -196,34 +88,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} için geçersiz kredi kartı numarası.
-        /// </summary>
-        public static string CredictCard {
-            get {
-                return ResourceManager.GetString("CredictCard", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Geri.
-        /// </summary>
-        public static string Geri {
-            get {
-                return ResourceManager.GetString("Geri", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Kaydet.
-        /// </summary>
-        public static string Kaydet {
-            get {
-                return ResourceManager.GetString("Kaydet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Oturum Kapat.
+        ///   Looks up a localized string similar to Logoff.
         /// </summary>
         public static string Logoff {
             get {
@@ -232,25 +97,115 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} için maksimum değer {1} olmalı.
+        ///   Looks up a localized string similar to January.
         /// </summary>
-        public static string Max {
+        public static string Month_1 {
             get {
-                return ResourceManager.GetString("Max", resourceCulture);
+                return ResourceManager.GetString("Month_1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} için minimum değer {1} olmalı.
+        ///   Looks up a localized string similar to October.
         /// </summary>
-        public static string Min {
+        public static string Month_10 {
             get {
-                return ResourceManager.GetString("Min", resourceCulture);
+                return ResourceManager.GetString("Month_10", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yeni Ekle.
+        ///   Looks up a localized string similar to November.
+        /// </summary>
+        public static string Month_11 {
+            get {
+                return ResourceManager.GetString("Month_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to December.
+        /// </summary>
+        public static string Month_12 {
+            get {
+                return ResourceManager.GetString("Month_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to February.
+        /// </summary>
+        public static string Month_2 {
+            get {
+                return ResourceManager.GetString("Month_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to March.
+        /// </summary>
+        public static string Month_3 {
+            get {
+                return ResourceManager.GetString("Month_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to April.
+        /// </summary>
+        public static string Month_4 {
+            get {
+                return ResourceManager.GetString("Month_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to May.
+        /// </summary>
+        public static string Month_5 {
+            get {
+                return ResourceManager.GetString("Month_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to June.
+        /// </summary>
+        public static string Month_6 {
+            get {
+                return ResourceManager.GetString("Month_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to July.
+        /// </summary>
+        public static string Month_7 {
+            get {
+                return ResourceManager.GetString("Month_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to August.
+        /// </summary>
+        public static string Month_8 {
+            get {
+                return ResourceManager.GetString("Month_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to September.
+        /// </summary>
+        public static string Month_9 {
+            get {
+                return ResourceManager.GetString("Month_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add New.
         /// </summary>
         public static string New {
             get {
@@ -259,7 +214,25 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sıfırla.
+        ///   Looks up a localized string similar to No Access.
+        /// </summary>
+        public static string NoAccess {
+            get {
+                return ResourceManager.GetString("NoAccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not Found.
+        /// </summary>
+        public static string NotFound {
+            get {
+                return ResourceManager.GetString("NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
         /// </summary>
         public static string Reset {
             get {
@@ -268,7 +241,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kaydet.
+        ///   Looks up a localized string similar to Save.
         /// </summary>
         public static string Save {
             get {
@@ -277,7 +250,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kaydet &amp; Düzenle.
+        ///   Looks up a localized string similar to Save &amp; Edit.
         /// </summary>
         public static string SaveEdit {
             get {
@@ -286,7 +259,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kaydet &amp; Ekle.
+        ///   Looks up a localized string similar to Save &amp; New.
         /// </summary>
         public static string SaveNew {
             get {
@@ -295,7 +268,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SEÇİNİZ.
+        ///   Looks up a localized string similar to SELECT.
         /// </summary>
         public static string Sec {
             get {
@@ -304,7 +277,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Ekle.
+        ///   Looks up a localized string similar to  Add.
         /// </summary>
         public static string TitleCreate {
             get {
@@ -313,7 +286,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Değiştir.
+        ///   Looks up a localized string similar to  Edit.
         /// </summary>
         public static string TitleEdit {
             get {
@@ -322,7 +295,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Listesi.
+        ///   Looks up a localized string similar to  List.
         /// </summary>
         public static string TitleList {
             get {
@@ -331,7 +304,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to aranıyor.
+        ///   Looks up a localized string similar to searching.
         /// </summary>
         public static string Token_Ara {
             get {
@@ -340,7 +313,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aranacak kelimeyi girin.
+        ///   Looks up a localized string similar to Enter search keyword.
         /// </summary>
         public static string Token_AramaKelime {
             get {
@@ -349,7 +322,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to bulunamadı.
+        ///   Looks up a localized string similar to not found.
         /// </summary>
         public static string Token_NoResult {
             get {
@@ -358,7 +331,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yükle.
+        ///   Looks up a localized string similar to Upload.
         /// </summary>
         public static string Upload {
             get {

@@ -22,7 +22,7 @@ namespace Buran.Core.MvcLibrary.Resource {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Text {
+    public class Text {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Buran.Core.MvcLibrary.Resource.Text", typeof(Text).Assembly);
@@ -51,7 +51,7 @@ namespace Buran.Core.MvcLibrary.Resource {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,72 +61,72 @@ namespace Buran.Core.MvcLibrary.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &apos;{0}&apos; kayıdını silmek istediğinizden emin misiniz?.
+        ///   Looks up a localized string similar to Are you sure to delete &apos;{0}&apos;?.
         /// </summary>
-        internal static string AskDelete {
+        public static string AskDelete {
             get {
                 return ResourceManager.GetString("AskDelete", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to İle Başlayan.
+        ///   Looks up a localized string similar to Start With.
         /// </summary>
-        internal static string Baslayan {
+        public static string Baslayan {
             get {
                 return ResourceManager.GetString("Baslayan", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Büyük Eşittir.
+        ///   Looks up a localized string similar to &gt;=.
         /// </summary>
-        internal static string BuyukEsit {
+        public static string BuyukEsit {
             get {
                 return ResourceManager.GetString("BuyukEsit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Büyüktür.
+        ///   Looks up a localized string similar to &gt;.
         /// </summary>
-        internal static string Buyuktur {
+        public static string Buyuktur {
             get {
                 return ResourceManager.GetString("Buyuktur", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filtreyi Temizle.
+        ///   Looks up a localized string similar to Clear Filter.
         /// </summary>
-        internal static string ClearFilter {
+        public static string ClearFilter {
             get {
                 return ResourceManager.GetString("ClearFilter", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kapat.
+        ///   Looks up a localized string similar to Close.
         /// </summary>
-        internal static string Close {
+        public static string Close {
             get {
                 return ResourceManager.GetString("Close", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aktif Filtre:.
+        ///   Looks up a localized string similar to Active Filtre:.
         /// </summary>
-        internal static string CurrentFilter {
+        public static string CurrentFilter {
             get {
                 return ResourceManager.GetString("CurrentFilter", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eşittir.
+        ///   Looks up a localized string similar to =.
         /// </summary>
-        internal static string Esit {
+        public static string Esit {
             get {
                 return ResourceManager.GetString("Esit", resourceCulture);
             }
@@ -135,79 +135,79 @@ namespace Buran.Core.MvcLibrary.Resource {
         /// <summary>
         ///   Looks up a localized string similar to Excel.
         /// </summary>
-        internal static string ExportExcelText {
+        public static string ExportExcelText {
             get {
                 return ResourceManager.GetString("ExportExcelText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dışa Aktar.
+        ///   Looks up a localized string similar to Export.
         /// </summary>
-        internal static string ExportText {
+        public static string ExportText {
             get {
                 return ResourceManager.GetString("ExportText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to İçeren.
+        ///   Looks up a localized string similar to Contains.
         /// </summary>
-        internal static string Iceren {
+        public static string Iceren {
             get {
                 return ResourceManager.GetString("Iceren", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Küçük Eşittir.
+        ///   Looks up a localized string similar to &lt;=.
         /// </summary>
-        internal static string KucukEsit {
+        public static string KucukEsit {
             get {
                 return ResourceManager.GetString("KucukEsit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Küçüktür.
+        ///   Looks up a localized string similar to &lt;.
         /// </summary>
-        internal static string Kucuktur {
+        public static string Kucuktur {
             get {
                 return ResourceManager.GetString("Kucuktur", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kayıt: {0}-{1}/{2}.
+        ///   Looks up a localized string similar to Records: {0}-{1}/{2}.
         /// </summary>
-        internal static string PagerDesc {
+        public static string PagerDesc {
             get {
                 return ResourceManager.GetString("PagerDesc", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kayıt: 0.
+        ///   Looks up a localized string similar to Record: 0.
         /// </summary>
-        internal static string PagerDesc_No {
+        public static string PagerDesc_No {
             get {
                 return ResourceManager.GetString("PagerDesc_No", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Boyut: .
+        ///   Looks up a localized string similar to Page Size: .
         /// </summary>
-        internal static string PageSizeKeyword {
+        public static string PageSizeKeyword {
             get {
                 return ResourceManager.GetString("PageSizeKeyword", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ara.
+        ///   Looks up a localized string similar to Find.
         /// </summary>
-        internal static string Search {
+        public static string Search {
             get {
                 return ResourceManager.GetString("Search", resourceCulture);
             }

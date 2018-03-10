@@ -118,96 +118,90 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Back" xml:space="preserve">
-    <value>Back</value>
+    <value>Geri</value>
   </data>
   <data name="ChangePass" xml:space="preserve">
-    <value>Change Password</value>
+    <value>Şifre Değiştir</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Kapat</value>
   </data>
   <data name="Logoff" xml:space="preserve">
-    <value>Logoff</value>
+    <value>Oturum Kapat</value>
   </data>
   <data name="Month_1" xml:space="preserve">
-    <value>January</value>
+    <value>Ocak</value>
   </data>
   <data name="Month_10" xml:space="preserve">
-    <value>October</value>
+    <value>Ekim</value>
   </data>
   <data name="Month_11" xml:space="preserve">
-    <value>November</value>
+    <value>Kasım</value>
   </data>
   <data name="Month_12" xml:space="preserve">
-    <value>December</value>
+    <value>Aralık</value>
   </data>
   <data name="Month_2" xml:space="preserve">
-    <value>February</value>
+    <value>Şubat</value>
   </data>
   <data name="Month_3" xml:space="preserve">
-    <value>March</value>
+    <value>Mart</value>
   </data>
   <data name="Month_4" xml:space="preserve">
-    <value>April</value>
+    <value>Nisan</value>
   </data>
   <data name="Month_5" xml:space="preserve">
-    <value>May</value>
+    <value>Mayıs</value>
   </data>
   <data name="Month_6" xml:space="preserve">
-    <value>June</value>
+    <value>Haziran</value>
   </data>
   <data name="Month_7" xml:space="preserve">
-    <value>July</value>
+    <value>Temmuz</value>
   </data>
   <data name="Month_8" xml:space="preserve">
-    <value>August</value>
+    <value>Ağustos</value>
   </data>
   <data name="Month_9" xml:space="preserve">
-    <value>September</value>
+    <value>Eylül</value>
   </data>
   <data name="New" xml:space="preserve">
-    <value>Add New</value>
-  </data>
-  <data name="NoAccess" xml:space="preserve">
-    <value>No Access</value>
-  </data>
-  <data name="NotFound" xml:space="preserve">
-    <value>Not Found</value>
+    <value>Yeni Ekle</value>
   </data>
   <data name="Reset" xml:space="preserve">
-    <value>Reset</value>
+    <value>Sıfırla</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Kaydet</value>
   </data>
   <data name="SaveEdit" xml:space="preserve">
-    <value>Save &amp; Edit</value>
+    <value>Kaydet &amp; Düzenle</value>
   </data>
   <data name="SaveNew" xml:space="preserve">
-    <value>Save &amp; New</value>
+    <value>Kaydet &amp; Ekle</value>
   </data>
   <data name="Sec" xml:space="preserve">
-    <value>SELECT</value>
+    <value>SEÇİNİZ</value>
   </data>
   <data name="TitleCreate" xml:space="preserve">
-    <value> Add</value>
+    <value> Ekle</value>
   </data>
   <data name="TitleEdit" xml:space="preserve">
-    <value> Edit</value>
+    <value> Değiştir</value>
   </data>
   <data name="TitleList" xml:space="preserve">
-    <value> List</value>
+    <value> Listesi</value>
   </data>
   <data name="Token_Ara" xml:space="preserve">
-    <value>searching</value>
+    <value>aranıyor</value>
   </data>
   <data name="Token_AramaKelime" xml:space="preserve">
-    <value>Enter search keyword</value>
+    <value>Aranacak kelimeyi girin</value>
   </data>
   <data name="Token_NoResult" xml:space="preserve">
-    <value>not found</value>
+    <value>bulunamadı</value>
   </data>
   <data name="Upload" xml:space="preserve">
-    <value>Upload</value>
+    <value>Yükle</value>
   </data>
 </root>

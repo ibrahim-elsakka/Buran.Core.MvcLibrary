@@ -118,54 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AskDelete" xml:space="preserve">
-    <value>'{0}' kayıdını silmek istediğinizden emin misiniz?</value>
+    <value>Are you sure to delete '{0}'?</value>
   </data>
   <data name="Baslayan" xml:space="preserve">
-    <value>İle Başlayan</value>
+    <value>Start With</value>
   </data>
   <data name="BuyukEsit" xml:space="preserve">
-    <value>Büyük Eşittir</value>
+    <value>&gt;=</value>
   </data>
   <data name="Buyuktur" xml:space="preserve">
-    <value>Büyüktür</value>
+    <value>&gt;</value>
   </data>
   <data name="ClearFilter" xml:space="preserve">
-    <value>Filtreyi Temizle</value>
+    <value>Clear Filter</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Kapat</value>
+    <value>Close</value>
   </data>
   <data name="CurrentFilter" xml:space="preserve">
-    <value>Aktif Filtre:</value>
+    <value>Active Filtre:</value>
   </data>
   <data name="Esit" xml:space="preserve">
-    <value>Eşittir</value>
+    <value>=</value>
   </data>
   <data name="ExportExcelText" xml:space="preserve">
     <value>Excel</value>
   </data>
   <data name="ExportText" xml:space="preserve">
-    <value>Dışa Aktar</value>
+    <value>Export</value>
   </data>
   <data name="Iceren" xml:space="preserve">
-    <value>İçeren</value>
+    <value>Contains</value>
   </data>
   <data name="KucukEsit" xml:space="preserve">
-    <value>Küçük Eşittir</value>
+    <value>&lt;=</value>
   </data>
   <data name="Kucuktur" xml:space="preserve">
-    <value>Küçüktür</value>
+    <value>&lt;</value>
   </data>
   <data name="PagerDesc" xml:space="preserve">
-    <value>Kayıt: {0}-{1}/{2}</value>
+    <value>Records: {0}-{1}/{2}</value>
   </data>
   <data name="PagerDesc_No" xml:space="preserve">
-    <value>Kayıt: 0</value>
+    <value>Record: 0</value>
   </data>
   <data name="PageSizeKeyword" xml:space="preserve">
-    <value>Boyut: </value>
+    <value>Page Size: </value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Ara</value>
+    <value>Find</value>
   </data>
 </root>
