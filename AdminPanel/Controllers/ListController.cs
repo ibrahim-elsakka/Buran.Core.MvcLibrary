@@ -17,7 +17,7 @@ namespace Buran.Core.MvcLibrary.AdminPanel.Controllers
         where Z : class
     {
         protected Z _context;
-        protected ResourceManager rsMan;
+        public ResourceManager ResourceMan;
 
         protected string DeleteJsAction = "Reload();";
         protected string DeleteJsAction2 = "Reload('{0}');";
@@ -138,9 +138,9 @@ namespace Buran.Core.MvcLibrary.AdminPanel.Controllers
                 r += "_EditorTitle";
                 suffixName = UI.TitleEdit;
             }
-            if (rsMan != null)
+            if (ResourceMan != null)
             {
-                var rsm = rsMan.GetString(r);
+                var rsm = ResourceMan.GetString(r);
                 return (rsm.IsEmpty() ? r : rsm) + suffixName;
             }
             return string.Empty;

@@ -196,7 +196,7 @@ namespace Buran.Core.MvcLibrary.AdminPanel.Controllers
 
         private int _editId;
         [HttpPost]
-        public virtual async Task<IActionResult> Edit(int keepEdit, T item)
+        public virtual IActionResult Edit(int keepEdit, T item)
         {
             var keyFieldName = Digger2.GetKeyFieldNameFirst(typeof(T));
             var v = Digger.GetObjectValue(item, keyFieldName);
@@ -206,7 +206,7 @@ namespace Buran.Core.MvcLibrary.AdminPanel.Controllers
                 if (_editId > 0)
                 {
                     var org = Repo.GetItem(_editId);
-                    var x = await TryUpdateModelAsync(org);
+                    var x = TryUpdateModelAsync(org);
                     if (OnEditSaveCheck(org))
                     {
                         OnEditSaveItem(org);
