@@ -271,10 +271,11 @@ namespace Buran.Core.MvcLibrary.Grid
             }
             foreach (var field in columns.Where(d => d.Visible))
             {
+                var headClass = field.HeaderCssClass.IsEmpty() ? "" : $"class=\"{field.HeaderCssClass}\"";
                 if (field.Width > 0)
-                    builder.AppendHtml($"<th width='{field.Width}'>");
+                    builder.AppendHtml($"<th width='{field.Width}' {headClass}>");
                 else
-                    builder.AppendHtml("<th>");
+                    builder.AppendHtml($"<th {headClass}>");
                 if (field.DataColumnType == DataColumnTypes.BoundColumn)
                 {
                     if (string.IsNullOrWhiteSpace(field.Caption))

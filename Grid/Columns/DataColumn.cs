@@ -21,6 +21,7 @@ namespace Buran.Core.MvcLibrary.Grid.Columns
             ValueConverter = new List<DataValueConverter>();
             DataFormat = string.Empty;
             Alignment = AlignmentTypes.Left;
+            HeaderCssClass = "";
         }
 
         public DataColumn(string fieldName)
@@ -36,6 +37,7 @@ namespace Buran.Core.MvcLibrary.Grid.Columns
             ValueConverter = new List<DataValueConverter>();
             DataFormat = string.Empty;
             Alignment = AlignmentTypes.Left;
+            HeaderCssClass = "";
         }
 
         public enum AlignmentTypes
@@ -45,6 +47,8 @@ namespace Buran.Core.MvcLibrary.Grid.Columns
             Center
         }
         public AlignmentTypes Alignment { get; set; }
+
+        public string HeaderCssClass { get; set; }
 
         public string FieldName { get; set; }
 
