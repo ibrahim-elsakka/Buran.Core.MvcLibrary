@@ -157,7 +157,7 @@ namespace Buran.Core.MvcLibrary.Grid
             {
                 var refreshUrl = RefreshUrl(helper, option);
                 writer.AppendHtml($"<div id='{"dataGrid-" + option.GridDiv}' data-refreshurl='{refreshUrl}' class='{"table-scrollable"}'>");
-                writer.AppendHtml($"<table id='{"tableList"}' class='{option.CssTable}'>");
+                writer.AppendHtml($"<table id='{option.TableId}' class='{option.CssTable}'>");
             }
             if (option.LayoutType == DataGridOptions.LayoutTypes.Table || tableScrollFirst)
             {

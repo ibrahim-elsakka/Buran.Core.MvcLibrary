@@ -17,6 +17,7 @@ namespace Buran.Core.MvcLibrary.Grid
         public DataGridOptions()
         {
             LayoutType = LayoutTypes.Table;
+            TableId = "";
 
             var popupEditorCss = "fancybox fancybox.iframe";
 
@@ -70,6 +71,7 @@ namespace Buran.Core.MvcLibrary.Grid
 
         public LayoutTypes LayoutType { get; set; }
         public string CssTable { get; set; }
+        public string TableId { get; set; }
 
         public string PagerAndShortAction { get; set; }
         public string PagerJsFunction { get; set; }
