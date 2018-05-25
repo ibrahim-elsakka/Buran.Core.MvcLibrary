@@ -3,6 +3,7 @@ using Buran.Core.MvcLibrary.Utils;
 using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Buran.Core.MvcLibrary.Grid.Pager
@@ -102,7 +103,7 @@ namespace Buran.Core.MvcLibrary.Grid.Pager
             return WrapInListItem(last, "last");
         }
 
-        private static TagBuilder PageSizeCombo(string format, int currentPageSize, string pageSizeUrl)
+        private static TagBuilder PageSizeCombo(string format, int currentPageSize, string pageSizeUrl, List<int> itemCountList)
         {
             var text = new TagBuilder("span");
             text.InnerHtml.SetHtmlContent(format);
@@ -110,16 +111,19 @@ namespace Buran.Core.MvcLibrary.Grid.Pager
             var select = new TagBuilder("select");
             select.Attributes["id"] = "ddPageSize";
             select.Attributes["data-url"] = pageSizeUrl;
-            select.InnerHtml.SetHtmlContent($"<option value=\"{10}\" {(currentPageSize == 10 ? "selected=\"selected\"" : "")}>{10}</option>");
-            select.InnerHtml.SetHtmlContent($"<option value=\"{20}\" {(currentPageSize == 20 ? "selected=\"selected\"" : "")}>{20}</option>");
-            select.InnerHtml.SetHtmlContent($"<option value=\"{50}\" {(currentPageSize == 50 ? "selected=\"selected\"" : "")}>{50}</option>");
-            select.InnerHtml.SetHtmlContent($"<option value=\"{100}\" {(currentPageSize == 100 ? "selected=\"selected\"" : "")}>{100}</option>");
+
+            foreach (var it in itemCountList)
+            {
+                select.InnerHtml.SetHtmlContent($"<option value=\"{it}\" {(currentPageSize == it ? "selected=\"selected\"" : "")}>{it}</option>");
+            }
             text.InnerHtml.SetHtmlContent(select);
             return text;
         }
 
         public static string PagedListPager2(this IHtmlHelper html, IPagedList list,
-            Func<int, string> generatePageUrl, PagedListRenderOptions options, int currentPageSize, string pageSizeUrl)
+            Func<int, string> generatePageUrl, PagedListRenderOptions options,
+            int currentPageSize, string pageSizeUrl,
+            List<int> itemCountList)
         {
             var listItemLinks = new StringBuilder();
 
@@ -179,7 +183,8 @@ namespace Buran.Core.MvcLibrary.Grid.Pager
 
             var divInfo = new TagBuilder("div");
             divInfo.AddCssClass("info");
-            divInfo.InnerHtml.SetHtmlContent(result.GetString() + ", " + PageSizeCombo(options.PageSizeText, currentPageSize, pageSizeUrl).GetString());
+            divInfo.InnerHtml.SetHtmlContent(result.GetString() + ", " +
+                PageSizeCombo(options.PageSizeText, currentPageSize, pageSizeUrl, itemCountList).GetString());
             divLeft.InnerHtml.SetHtmlContent(divInfo.GetString());
 
             var divRight = new TagBuilder("div");
@@ -199,7 +204,8 @@ namespace Buran.Core.MvcLibrary.Grid.Pager
             return pagerDiv.GetString();
         }
 
-        public static string PagedListPager<T>(IPagedList<T> paged, Func<int, string> generatePageUrl, PagedListRenderOptions options, int index, int pagerSize)
+        public static string PagedListPager<T>(IPagedList<T> paged, Func<int, string> generatePageUrl,
+            PagedListRenderOptions options, int index, int pagerSize)
         {
             if (paged.PageCount == 1)
                 return "";

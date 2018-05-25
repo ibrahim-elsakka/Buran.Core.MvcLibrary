@@ -556,7 +556,8 @@ namespace Buran.Core.MvcLibrary.Grid
                          DisplayItemSliceAndTotal = true
                      },
                      currentPageSize,
-                     pageSizeUrl);
+                     pageSizeUrl,
+                     option.ItemListCountList);
             }
             return string.Empty;
         }

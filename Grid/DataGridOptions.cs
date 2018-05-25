@@ -67,6 +67,8 @@ namespace Buran.Core.MvcLibrary.Grid
 
             ButtonRefreshEnabled = true;
             ButtonRefreshCss = "btn btn-xs text-refresh";
+
+            ItemListCountList = new List<int> { 10, 20, 50, 100 };
         }
 
         public LayoutTypes LayoutType { get; set; }
@@ -134,5 +136,7 @@ namespace Buran.Core.MvcLibrary.Grid
         public string ButtonEditShowFunction { get; set; }
         public string ButtonDeleteShowFunction { get; set; }
         public Type RowFormatClass { get; set; }
+
+        public List<int> ItemListCountList { get; set; }
     }
 }
