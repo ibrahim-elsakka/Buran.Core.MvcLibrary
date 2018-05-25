@@ -112,10 +112,12 @@ namespace Buran.Core.MvcLibrary.Grid.Pager
             select.Attributes["id"] = "ddPageSize";
             select.Attributes["data-url"] = pageSizeUrl;
 
+            var str = new StringBuilder();
             foreach (var it in itemCountList)
             {
-                select.InnerHtml.SetHtmlContent($"<option value=\"{it}\" {(currentPageSize == it ? "selected=\"selected\"" : "")}>{it}</option>");
+                str.AppendLine($"<option value=\"{it}\" {(currentPageSize == it ? "selected=\"selected\"" : "")}>{it}</option>");
             }
+            select.InnerHtml.SetHtmlContent(str.ToString());
             text.InnerHtml.SetHtmlContent(select);
             return text;
         }
