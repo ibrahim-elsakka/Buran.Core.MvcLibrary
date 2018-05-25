@@ -121,7 +121,9 @@ namespace Buran.Core.MvcLibrary.Grid
             #endregion
 
             #region DO PAGING
-            var currentPageSize = option.PagerSize;
+            var currentPageSize = option.ItemListCountList.Count > 0
+                    ? option.ItemListCountList.First()
+                    : 20;
             var currentPageIndexItem = _queryItems.FirstOrDefault(d => d.Key == option.PagerKeyword);
             var pageIndex = 0;
             if (!currentPageIndexItem.Value.IsEmpty())
@@ -135,7 +137,7 @@ namespace Buran.Core.MvcLibrary.Grid
                 {
                     int.TryParse(currentPageSizeStr.Value, out currentPageSize);
                 }
-                option.PagerSize = currentPageSize;
+                //option.PagerSize = currentPageSize;
                 items = new PagedList<T>(items, pageIndex, currentPageSize);
                 TotalRowCount = (items as PagedList<T>).TotalItemCount;
                 TotalPageCount = (items as PagedList<T>).PageCount;
@@ -535,7 +537,7 @@ namespace Buran.Core.MvcLibrary.Grid
                         option.PagerKeyword,
                         pgeIndexli,
                         option.PageSizeKeyword,
-                        option.PagerSize,
+                        currentPageSize,
                         urlOperator).Replace("[PAGE]", "{0}");
 
                 var fs = urlHelper.Content(string.Format(@"~/{0}/{1}{4}{2}&{3}=XXX",

@@ -35,7 +35,7 @@ namespace Buran.Core.MvcLibrary.Grid
             PagerKeyword = "pageindex";
             PageSizeKeyword = "pagesize";
             PagerEnabled = true;
-            PagerSize = 20;
+            //PagerSize = 20;
 
             ButtonDeleteEnabled = true;
             ButtonDeleteAction = "delete";
@@ -81,7 +81,7 @@ namespace Buran.Core.MvcLibrary.Grid
 
         public string PagerKeyword { get; set; }
         public string PageSizeKeyword { get; set; }
-        public int PagerSize { get; set; }
+        //public int PagerSize { get; set; }
         public bool PagerEnabled { get; set; }
 
         public bool Sortable { get; set; }
