@@ -1,4 +1,5 @@
 ﻿using Buran.Core.Library.Utils;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Collections.Generic;
@@ -18,10 +19,8 @@ namespace Buran.Core.MvcLibrary.Grid.Helper
         public string CleanQueryString { get; set; }
         private UrlHelper urlHelper { get; set; }
 
-        public Sorter(List<KeyValuePair<string, string>> query, string sortKeyword, string pagerAndShortAction, IHtmlHelper helper,
-            string cleanQueryString)
+        public Sorter(List<KeyValuePair<string, string>> query, string sortKeyword, string pagerAndShortAction, IHtmlHelper helper)
         {
-            CleanQueryString = cleanQueryString;
             urlHelper = new UrlHelper(helper.ViewContext);
             List = new List<SorterInfo>();
 
@@ -38,6 +37,22 @@ namespace Buran.Core.MvcLibrary.Grid.Helper
                     }
                 }
             }
+
+            var qc = new List<KeyValuePair<string, string>>(query);
+            qc.RemoveAll(d => d.Key == sortKeyword);
+            var qb = new QueryBuilder(qc);
+            var qq = qb.ToQueryString();
+            CleanQueryString = qq.ToUriComponent().Replace("?", "");
+
+            var ci = pagerAndShortAction.Split('?');
+            if (ci.Count() > 1)
+            {
+                CleanQueryString = CleanQueryString.Replace(ci[1], "");
+            }
+            if (CleanQueryString == "?")
+                CleanQueryString = "";
+            if (CleanQueryString.StartsWith("&"))
+                CleanQueryString = CleanQueryString.Substring(1);
         }
 
         public string GetSortImg(string fieldName)

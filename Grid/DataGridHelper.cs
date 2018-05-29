@@ -81,7 +81,7 @@ namespace Buran.Core.MvcLibrary.Grid
                 return new HtmlString(content.GetString());
             }
 
-            _sorter = new Sorter(_queryItems, option.SortKeyword, option.PagerAndShortAction, helper, _queryParams);
+            _sorter = new Sorter(_queryItems, option.SortKeyword, option.PagerAndShortAction, helper);
             _filter = new Filter(_queryDictionary, option.PagerKeyword,
                 helper.ViewContext.RouteData, option.PagerAndShortAction,
                 helper, option.PagerJsFunction, option.GridDiv);
@@ -521,15 +521,25 @@ namespace Buran.Core.MvcLibrary.Grid
             {
                 var urlOperator = option.PagerAndShortAction.IndexOf("?") > -1 ? "&" : "?";
 
-                var queryStringClean = new List<KeyValuePair<string, string>>(_queryItems);
-                queryStringClean.RemoveAll(d => d.Key == option.PagerKeyword);
-                queryStringClean.RemoveAll(d => d.Key == option.PageSizeKeyword);
-                var qb = new QueryBuilder(queryStringClean);
+                var qc = new List<KeyValuePair<string, string>>(_queryItems);
+                qc.RemoveAll(d => d.Key == option.PagerKeyword);
+                qc.RemoveAll(d => d.Key == option.PageSizeKeyword);
 
+                var qb = new QueryBuilder(qc);
                 var pageSizeQs = qb.ToQueryString();
                 var pgeIndexli = pageSizeQs.ToUriComponent();
+
+                var ci = option.PagerAndShortAction.Split('?');
+                if (ci.Count() > 1)
+                {
+                    pgeIndexli = pgeIndexli.Replace(ci[1], "");
+                }
+                if (pgeIndexli == "?")
+                    pgeIndexli = "";
+
                 if (pgeIndexli.Length > 1)
                     pgeIndexli = "&" + pgeIndexli.Substring(1);
+                pgeIndexli = pgeIndexli.Replace("&&", "&");
 
                 var pageUrl = string.Format(@"~/{0}/{1}{6}{2}=[PAGE]&{4}={5}{3}",
                         LibGeneral.GetContentUrl(helper.ViewContext.RouteData),
@@ -543,9 +553,12 @@ namespace Buran.Core.MvcLibrary.Grid
                 var fs = urlHelper.Content(string.Format(@"~/{0}/{1}{4}{2}&{3}=XXX",
                             LibGeneral.GetContentUrl(helper.ViewContext.RouteData),
                             option.PagerAndShortAction,
-                            pageSizeQs,
+                            pgeIndexli, //pageSizeQs,
                             option.PageSizeKeyword,
                             urlOperator));
+                fs = fs.Replace("?&", "?");
+                fs = fs.Replace("&&", "&");
+                fs = fs.Replace("??", "?");
                 var pageSizeUrl = $"{option.PagerJsFunction}('{fs}', '{option.GridDiv}');";
                 return HtmlHelper2.PagedListPager2(
                      helper,
