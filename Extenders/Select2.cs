@@ -17,6 +17,7 @@ namespace Buran.Core.MvcLibrary.Extenders
 
     public static class Select2
     {
+
         public static HtmlString Select2For<TModel, TValue>(this IHtmlHelper<TModel> html,
             Expression<Func<TModel, TValue>> expression,
             string url, int resultSize = 0, bool multiselect = true,
@@ -98,6 +99,13 @@ namespace Buran.Core.MvcLibrary.Extenders
             return new HtmlString(div + js);
         }
 
+
+
+
+
+
+
+
         public static HtmlString Select2ComboFor<TModel, TValue>(this IHtmlHelper<TModel> html,
             Expression<Func<TModel, TValue>> expression,
             string url, string loaderUrl, string waterMark = "Select",
@@ -166,6 +174,12 @@ $(function () {{
 </script>", name, url, !parentCombo.IsEmpty() ? string.Format("id: $('#{0}').val(),", parentCombo) : "", waterMark, loaderUrl);
             return new HtmlString(div + js);
         }
+
+
+
+
+
+
 
         public static HtmlString Select2ComboFor1<TModel, TValue>(this IHtmlHelper<TModel> html,
             Expression<Func<TModel, TValue>> expression,
